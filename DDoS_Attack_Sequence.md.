@@ -1,0 +1,17 @@
+```mermaid
+sequenceDiagram
+participant Attacker
+participant BotNet
+participant WebServer
+participant Firewall
+```
+
+sequenceDiagram
+    Attacker->>Webserver: Botnet
+    Attacker<<-->>Webserver: Firewall
+ 
+sequenceDiagram explained
+  The attacker attacks from multiple systems as a botnet
+  The botnet connects to a webserver
+  The webserver's firewall attempts to block the botnet
+  If successful, the botnet performs a distributed denial of service attack in which traffic overwhelms the webserver. 
